@@ -1,2 +1,2 @@
 # PaginaWebBootstrap
-Página web creada con bootstrap
+Página web creada con html y bootstrap
