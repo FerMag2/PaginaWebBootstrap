@@ -4,46 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema 1.4</title>
-    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .right-column {
+            background-color: #343a40; 
+            color: white; 
+            padding: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <center><h1>Patrones de Diseño</h1></center>
-    <center><h2>Material</h2></center>
-    <center><p>Temas relacionados con el patrón de diseño</p></center>
-    <center><embed src="../documents/Tema 1.4.pdf" width="600" height="500" type="application/pdf"></center>
-    <h3 class="encabezado">¿Arquitectura o patrones de diseño?</h3> 
-    <p>
-        A diferencia de la arquitectura la cual se 
-        centra más en un panorama general del proyecto, 
-        los patrones de diseño están más enfocados a cómo 
-        mejorar la programación.
-    </p>  
-    <h3 class="encabezado">¿A qué te refieres con mejorar?</h3> 
-    <p>
-        Con el pasar de años se encontraron problemas 
-        en los proyectos de software que se repiten 
-        constantemente de ahí surgen estos patrones de 
-        diseño que están aprobados y resuelven problemas 
-        recurrentes. 
-    </p>  
-    <h3 class="encabezado">Dato curioso</h3> 
-    <p>
-        MVC no es un patrón de diseño, es más una arquitectura 
-        porque separa el código en distintas responsabilidades
-    </p> 
-    <h2>Videos</h1>
-    <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9QhIVc2_wkk?si=zxFIdIdTAlAbL3Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/G4mFD16PGMg?si=fqhd-hwi4OqlqkTu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gocJeOHtj9w?si=RFSjT9FkZxVTwvgO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/I6HkKii8jlM?si=TMr1GDhb1AcIEAIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
-    </center>
-    <table width="100%">
-        <tr>
-           
-            <td align="center"><a href="html/Tema1_3.html" onclick="cargarContenido(this); return false;"><button align="center">Regresar</button></a></td>
-            <td align="center"><a href="html/Tema2_1.html" onclick="cargarContenido(this); return false;"><button align="right">Ir al tema 2.1</button></a></td>
-        </tr>
-    </table>
+    <div class="container mt-5">
+        <h1 class="display-4 text-center">Patrones de Diseño</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="left-column">
+                    <h2>Material</h2>
+                    <p>Temas relacionados con el patrón de diseño.</p>
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <embed class="embed-responsive-item" src="../documents/Tema 1.4.pdf" type="application/pdf">
+                    </div>
+
+                    <h3 class="mt-4">¿Arquitectura o patrones de diseño?</h3>
+                    <p>A diferencia de la arquitectura, que se centra más en un panorama general del proyecto, los patrones de diseño están más enfocados en cómo mejorar la programación.</p>
+
+                    <h3 class="mt-4">¿A qué te refieres con mejorar?</h3>
+                    <p>Con el paso de los años, se encontraron problemas en los proyectos de software que se repiten constantemente. De ahí surgen estos patrones de diseño aprobados que resuelven problemas recurrentes.</p>
+
+                    <h3 class="mt-4">Dato curioso</h3>
+                    <p>MVC no es un patrón de diseño, es más una arquitectura porque separa el código en distintas responsabilidades.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-column">
+                    <h2 class="text-center">Videos</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9QhIVc2_wkk?si=zxFIdIdTAlAbL3Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container mt-3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G4mFD16PGMg?si=fqhd-hwi4OqlqkTu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container mt-3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gocJeOHtj9w?si=RFSjT9FkZxVTwvgO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container mt-3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/I6HkKii8jlM?si=TMr1GDhb1AcIEAIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

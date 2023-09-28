@@ -4,32 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema 2.5</title>
-    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .carousel-inner img {
+            max-height: 300px; 
+            margin: 0 auto; 
+        }
+        #imageCarousel {
+            background-color: #f8f9fa;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #343a40; 
+        }
+    </style>
 </head>
 <body>
     <center><h1>Práctica de Java con MySQL</h1></center>
     <center><h2>Material</h2></center>
     <center><p>Práctica de Java con Mysql</p></center>
     <center><embed src="../documents/Tema 2.5.pdf" width="600" height="500" type="application/pdf"></center>
-    <center><h2>Vistas de la Aplicación</h2>
-        <img src="../img/21.png" alt="Vista" width="500" height="300" class="imagen">
-        <img src="../img/20.png" alt="Vista" width="500" height="300" class="imagen">
-        <h2>Consulta de 2 Tablas y Estructura MVC</h2>
-        <img src="../img/19.png" alt="Consulta" width="500" height="300" class="imagen">
-        <img src="../img/18.png" alt="MVC" width="500" height="300" class="imagen">
-        <h2>Base de Datos y Diagrama de Entidad Relación</h2>
-        <img src="../img/14.png" alt="Base de datos" width="500" height="300" class="imagen">
-        <img src="../img/16.png" alt="Diagrama entidad relacion" width="500" height="300" class="imagen">
-        <h2>Conexión de Java con MySQL</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nKbonwin7Zg?si=aHoZlhdtNT8vrQyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nKbonwin7Zg?si=RsQO3NMqXg3CTTap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </center>   
+    
+    <!-- Agrega un carrusel de imágenes -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/21.png" alt="Vista" class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/20.png" alt="Vista" class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/19.png" alt="Consulta" class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/18.png" alt="MVC" class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/14.png" alt="Base de datos" class="d-block mx-auto">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/16.png" alt="Diagrama entidad relacion" class="d-block mx-auto">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+    
+    <h2>Conexión de Java con MySQL</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nKbonwin7Zg?si=aHoZlhdtNT8vrQyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nKbonwin7Zg?si=RsQO3NMqXg3CTTap" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     <table width="100%">
         <tr>
-           
             <td align="center"><a href="html/Tema2_4.html" onclick="cargarContenido(this); return false;"><button align="center">Regresar</button></a></td>
             <td align="center"><a href="html/Tema2_6.html" onclick="cargarContenido(this); return false;"><button align="right">Ir al tema 2.6</button></a></td>
         </tr>
     </table>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
