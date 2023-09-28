@@ -5,32 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema 2.3</title>
     <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .center-content {
+            text-align: center;
+        }
+
+        .imagen {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <center><h1>Triggers</h1></center>
-    <center><h2>Material</h2></center>
-    <center><p>Temas relacionados con los triggers</p></center>
-    <center><embed src="../documents/Tema 2.3.pdf" width="600" height="500" type="application/pdf"></center>
-    <h2>Videos</h2>
-    <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hb4wkSClKec?si=7OMHUXrSP3Ob57nO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DRon_SFQ5IY?si=OTn8wnvdkA9_pvC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jLk4BtAKZUM?si=EhfiU7Bwkc9qgA1Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/d6Vm5LRSMYM?si=LiHlbUF54Ez_qb95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </center>
-    <center><h2>Tablas de la Base de Datos</h2>
-        <img src="../img/8.png" alt="Tablas" width="300" height="300" class="imagen">
-        <h2>Creación de Triggers</h2>
-        <img src="../img/7.png" alt="Triggers" width="1000" height="300" class="imagen">
-        <h2>Triggers Creados</h2>
-        <img src="../img/9.png" alt="Triggers creados" width="500" height="300" class="imagen">
-    </center>
-    <table width="100%">
-        <tr>
-           
-            <td align="center"><a href="html/Tema2_2.html" onclick="cargarContenido(this); return false;"><button align="center">Regresar</button></a></td>
-            <td align="center"><a href="html/Tema2_4.html" onclick="cargarContenido(this); return false;"><button align="right">Ir al tema 2.4</button></a></td>
-        </tr>
-    </table>
+    <div class="container mt-5">
+        <h1 class="display-4 text-center">Triggers</h1>
+        <h2 class="text-center">Material</h2>
+        <p class="text-center">Temas relacionados con los triggers</p>
+        <div class="center-content">
+            <embed src="../documents/Tema 2.3.pdf" width="100%" height="500" type="application/pdf">
+        </div>
+        <h2 class="text-center">Videos</h2>
+        <div class="center-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hb4wkSClKec?si=7OMHUXrSP3Ob57nO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DRon_SFQ5IY?si=OTn8wnvdkA9_pvC1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jLk4BtAKZUM?si=EhfiU7Bwkc9qgA1Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d6Vm5LRSMYM?si=LiHlbUF54Ez_qb95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <h2 class="text-center">Tablas de la Base de Datos</h2>
+        <div class="center-content">
+            <img src="../img/8.png" alt="Tablas" class="imagen">
+        </div>
+        <h2 class="text-center">Creación de Triggers</h2>
+        <div class="center-content">
+            <img src="../img/7.png" alt="Triggers" class="imagen">
+        </div>
+        <h2 class="text-center">Triggers Creados</h2>
+        <div class="center-content">
+            <img src="../img/9.png" alt="Triggers creados" class="imagen">
+        </div>
+        <div class="d-flex justify-content-between">
+            <a href="html/Tema2_2.html" onclick="cargarContenido(this); return false;" class="btn btn-primary">Regresar</a>
+            <a href="html/Tema2_4.html" onclick="cargarContenido(this); return false;" class="btn btn-primary">Ir al tema 2.4</a>
+        </div>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -8,24 +8,25 @@
         body {
             font-family: Arial, sans-serif;
         }
-
         form {
             max-width: 400px;
             margin: 0 auto;
+            padding: 20px; 
+            background-color: #f2f2f2; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-
         label {
             display: block;
-            color: #fff;
+            color: #0f0d0d;
             margin-bottom: 5px;
         }
-
         input[type="text"],
         input[type="tel"],
         input[type="number"] {
             width: 100%;
             padding: 10px;
-            color:#fff;
+            color: #fff;
             margin-bottom: 10px;
             background-image: linear-gradient(to bottom, #343638, #0c0a11);
             border: 1px solid #dbd1d1;
@@ -45,27 +46,26 @@
         input[type="button"]:hover {
             background-color: #0056b3;
         }
-        .invisible {
-            display: none;
-        }
+
         .titulo {
-            /*font-size: 36px;*/
             color: #fff;
             background-image: linear-gradient(to bottom, #343638, #0c0a11);
             text-transform: uppercase;
             max-width: max-content;
-            /*text-align: center;*/
             padding: 10px;
             border: 2px solid #051b31;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 0 auto;
         }
-        .parent{
+
+        .parent {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-}
+        }
     </style>
 </head>
 <body>
@@ -89,7 +89,7 @@
         <label for="promedio">Promedio General:</label>
         <input type="number" id="promedio" name="promedio" step="0.01" required>
         <div class="parent">
-        <input type="button" value="Enviar" onclick="limpiarFormulario()">
+            <input type="button" value="Enviar" onclick="limpiarFormulario()">
         </div>
     </form>
 
@@ -97,10 +97,10 @@
         function limpiarFormulario() {
             var formulario = document.getElementById("registro-form");
             formulario.reset();
-            
         }
     </script>
-   <p>_________________________________________________________________________________________________________________________________</p> 
+    <p>_________________________________________________________________________________________________________________________________</p>
 </body>
 </html>
+
 
